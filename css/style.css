@@ -7,16 +7,24 @@ p {
     color: #3D3B40;
 }
 
-.logo {
+.navigation {
+    font-size: 28px;
+}
+
+.logo, .navigation {
     font-size: 32px;
     font-family: 'Archivo Black', sans-serif;
-    color: #183D3D;
     padding: 0;
     margin-bottom: 0;
 }
-
+    
 .erase-link-underscore {
     text-decoration: none;
+    color: #5C8374;
+}
+
+.logo > .erase-link-underscore {
+    color: #183D3D;
 }
 
 .section-container {
@@ -83,6 +91,7 @@ p {
 .content {
     padding: 0 30px;
     margin: 0;
+    text-align: justify;
 }
 
 .occupy-grid-2 {
@@ -135,6 +144,11 @@ p {
 
 .description {
     margin-top: 10px;
+    text-align: justify;
+}
+
+#workexp .description {
+    margin-bottom: 0;
 }
 
 #footer {
@@ -167,6 +181,16 @@ p {
     align-items: center;
     flex-direction: row;
     gap: 20px;
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .copyright {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {

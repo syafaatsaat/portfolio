@@ -229,10 +229,6 @@ a:active {
     color: #3D3B40;
 }
 
-test1 {
-    color: cornflowerblue;
-}
-
 @media (min-width: 1400px) {
     .section-container {
         width: 70%;

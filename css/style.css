@@ -126,6 +126,7 @@ p {
     border-radius: 15px;
     min-width: 50px;
     text-align: center;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -173,7 +174,10 @@ p {
 }
 
 .description {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     text-align: justify;
 }
 

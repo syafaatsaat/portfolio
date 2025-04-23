@@ -181,6 +181,16 @@ p {
     text-align: justify;
 }
 
+.work-list {
+    font-family: 'Roboto Mono', monospace;
+    color: #3D3B40;
+    list-style-type: square;
+}
+
+.work-list > li {
+    padding-bottom: 20px;
+}
+
 #workexp .description {
     margin-bottom: 0;
 }

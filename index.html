@@ -16,26 +16,23 @@
     </head>
 
     <body>
-        <section id="navbar">
-            <nav>
-                <div class="section-container nav-container">
-                    <div class="logo">
-                        <a href="./index.html" class="erase-link-underscore">syafaat_saat</a>
-                    </div>
-                    <ul class="no-bullets nav-container shortcuts">
-                        <li class="navigation">
-                            <a href="#workexp" class="erase-link-underscore">experiences</a>
-                        </li>
-                        <li class="navigation">
-                            <a href="#projects" class="erase-link-underscore">projects</a>
-                        </li>
-                        <li class="navigation">
-                            <a href="./assets/documents/Muhammad_Nur_Syafaat_Bin_Mohamed_Saat-Resume.pdf" target="_blank" class="erase-link-underscore">resume</a>
-                        </li>
-                    </ul>
+        <nav id="navbar">
+            <div class="section-container nav-container">
+                <div class="logo">
+                    <a href="./index.html" class="erase-link-underscore">syafaat_saat</a>
                 </div>
-            </nav>
-        </section>
+                <div class="nav-toggle" id="nav-toggle">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#workexp" class="erase-link-underscore">experiences</a></li>
+                    <li><a href="#projects" class="erase-link-underscore">projects</a></li>
+                    <li><a href="./assets/documents/Muhammad_Nur_Syafaat_Bin_Mohamed_Saat-Resume.pdf" target="_blank" class="erase-link-underscore">resume</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <section id="aboutme">
             <div class="section-container">
@@ -47,7 +44,7 @@
                     <div class="box occupy-grid-2">
                         <p class="label">About me</p>
                         <p class="content">Tech-savvy with a solid foundation in Python, PostgreSQL, and cloud technologies. I hold a Data Engineering certification and a Bachelor's degree in Computer Science and Game Design, with strong skills in data management, data structures, object-oriented programming, problem-solving, and collaborative software development. I am eager to leverage my technical background and analytical skills in a Software Engineering or a Data Engineering role.
-                        <br>This website is a product of my self-learning web development journey. Outside of coding, I love to listen to music, watch movies and bake pastries (well, mainly cheesecakes).</p>
+                        <br><br>This website is a product of my self-learning web development journey. Outside of coding, I love to listen to music, watch movies and bake pastries (well, mainly cheesecakes).</p>
                     </div>
                     <div class="box">
                         <p class="label">Languages</p>
@@ -170,6 +167,7 @@
                         <li>Azure Databricks</li>
                         <li>Azure Data Factory</li>
                         <li>Azure Synapse Analytics</li>
+                        <li>Azure Key Vault</li>
                         <li>Power BI</li>
                         <li>GitHub</li>
                     </ul>
@@ -210,8 +208,7 @@
                     <div class="occupy-grid-2 video-cell">
                         <iframe width="480" height="270" src="https://www.youtube.com/embed/AgVRCVRH7Cc" title="DES335 - Burnt Paws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <p class="occupy-grid-2 description">A 2D action, survival game where you play as a cat, who is a master in cooking. As a cat, their natural instinct makes them a good hunter too. On a mission to be the best feline chef, you find yourself on an inhabited island full of potential ingredients for delicious dishes. Cook and hunt your way to the top of the food chain.
-                    </p>
+                    <p class="occupy-grid-2 description">A 2D action, survival game where you play as a cat, who is a master in cooking. As a cat, their natural instinct makes them a good hunter too. On a mission to be the best feline chef, you find yourself on an inhabited island full of potential ingredients for delicious dishes. Cook and hunt your way to the top of the food chain.<br><br>I programmed the game's flow (the start of the round and the end condition of the round), and the behaviour of the animals moving autonomously around the map.</p>
                     <ul class="occupy-grid-2 skill-items no-bullets">
                         <li>C#</li>
                         <li>Unity</li>
@@ -240,8 +237,7 @@
                     <div class="occupy-grid-2 video-cell">
                         <iframe width="480" height="270" src="https://www.youtube.com/embed/HE2WZom66wk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <p class="occupy-grid-2 description">In this action, platformer, local co-op game, the two players control robot bodyguards who are trying to protect their individual AI VIP robots. The objective of this game is to eliminate the other player's VIP robot while protecting their own.<br><br>This game is made using our own custom 2D game engine that we built from scratch. I implemented the sprite sheet splicing system for the engine.<br><br>Using the AStar pathfinding algorithm, the VIP robots find their way around the map. The challenge this time is the height element where they need to determine spots that are jumpable.
-                    </p>
+                    <p class="occupy-grid-2 description">In this action, platformer, local co-op game, the two players control robot bodyguards who are trying to protect their individual AI VIP robots. The objective of this game is to eliminate the other player's VIP robot while protecting their own.<br><br>I implemented the sprite sheet splicing system for our custom engine. I also programmed the pathfinding behaviour of the VIP robots using the AStar pathfinding algorithm. The challenge this time is the height element where they need to determine spots that are jumpable.</p>
                     <ul class="occupy-grid-2 skill-items no-bullets">
                         <li>C++</li>
                         <li>C</li>
@@ -258,12 +254,13 @@
                             <source src="./assets/videos/GAM150.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <p class="occupy-grid-2 description">An action 2D game where you play as Curtise, who has the ability to slow down time and move objects with her mind. You are trapped in a disco theme building guarded by robots. Solve the puzzles and fight your way to freedom.<br><br>This game is made using the school DigiPen's custom-made engine.<br><br>In this project, I was tasked to code the behaviour of the robots roaming around the game. The robots move around using the AStar pathfinding algorithm that I learnt.
+                    <p class="occupy-grid-2 description">An action 2D game where you play as Curtise, who has the ability to slow down time and move objects with her mind. You are trapped in a disco theme building guarded by robots. Solve the puzzles and fight your way to freedom.<br><br>In this project, I was tasked to code the behaviour of the robots roaming around the game. The robots move around using the AStar pathfinding algorithm that I learnt.
                     </p>
                     <ul class="occupy-grid-2 skill-items no-bullets">
                         <li>C++</li>
                         <li>C</li>
                         <li>GitHub</li>
+                        <li>Custom 2D Engine</li>
                     </ul>
                 </div>
                 <hr>
@@ -275,11 +272,12 @@
                             <source src="./assets/videos/SpaceRanger_VS_Aliens.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <p class="occupy-grid-2 description">A tower defense game where you play as a space ranger protecting their spaceship from incoming aliens. You can deploy turrets and defenses to fight off the aliens in this game.<br><br>This game is inspired by the game, Plants vs Zombies. The game's visual aspect is made entirely of symbols and characters.<br><br>I was in charge of the design of the main menu and the game screen. Also, I programmed the behaviour of the aliens who are moving towards the spaceship.
+                    <p class="occupy-grid-2 description">A tower defense game where you play as a space ranger protecting their spaceship from incoming aliens. You can deploy turrets and defenses to fight off the aliens in this game. This game is inspired by the game, Plants vs Zombies. The game's visual aspect is made entirely of symbols and characters.<br><br>I was in charge of the design of the main menu and the game screen. Also, I programmed the behaviour of the aliens who are moving towards the spaceship.
                     </p>
                     <ul class="occupy-grid-2 skill-items no-bullets">
                         <li>C</li>
                         <li>GitHub</li>
+                        <li>Visual Studio Code</li>
                     </ul>
                 </div>
             </div>
@@ -303,8 +301,8 @@
         </section>
         
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="index.js" charset="UTF-8"></script>
     </body>
-
     
 </html>

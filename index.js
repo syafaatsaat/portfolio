@@ -17,13 +17,18 @@ toggle.addEventListener('click', () => {
     toggle.classList.toggle('active');
 
     if (showMenu) {
-        toggle.classList.remove("close");
+        if (toggle.classList.contains("close")) {
+            toggle.classList.remove("close");
+        }
     }
     else {
-        toggle.classList.add("close");
+        if (toggle.classList.contains("close") == false) {
+            toggle.classList.add("close");
+        }
     }
     showMenu = !showMenu;
 });
+
 
 // Smooth scroll adjustment to offset fixed navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -38,8 +43,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
 
-        // Close menu if open (on mobile)
         navLinks.classList.remove('open');
         toggle.classList.remove('active');
+
+        if (showMenu) {
+            if (toggle.classList.contains("close")) {
+                toggle.classList.remove("close");
+            }
+        }
+        else {
+            if (toggle.classList.contains("close") == false) {
+                toggle.classList.add("close");
+            }
+        }
+        showMenu = !showMenu;
     });
 });
